@@ -30,7 +30,6 @@ let questions = [ques1, ques2, ques3, ques4];
 //   })
 // }
 
-let div = document.getElementById('p');
 let trueAns = 0;
 function checkAnswer(){
   questions.forEach((elem) => {
@@ -40,7 +39,7 @@ function checkAnswer(){
       }
   })
   console.log(trueAns);
-  div.innerHTML=`Правильных ответов: ${trueAns}`;
+  document.body.innerHTML=`Правильных ответов: ${trueAns}`;
 }
 
 checkAnswer();

@@ -42,4 +42,13 @@ function checkAnswer(){
   document.body.innerHTML=`Правильных ответов: ${trueAns}`;
 }
 
-checkAnswer();
+//checkAnswer();
+
+let btnPrev = document.getElementById('btn-prev');
+let btnNext = document.getElementById('btn-next');
+btnPrev.addEventListener('click', (event) => {
+  console.log('-1');
+});
+btnNext.addEventListener('click', (event) => {
+  console.log('1');
+});

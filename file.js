@@ -5,7 +5,7 @@ const ques1 = {
   answer:'',
   currectAnswer:'Для стандартизации взаимодействия между сетевыми устройствами'}
 const ques2 = {
-  question:'Сколько уровней содердит модель OSI?',
+  question:'Сколько уровней содержит модель OSI?',
   answer:'',
   currectAnswer:'7'}
 const ques3 = {

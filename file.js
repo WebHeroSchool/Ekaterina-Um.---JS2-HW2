@@ -18,6 +18,15 @@ const ques4 = {
   correctAnswer:'d'}
 let questions = [ques1, ques2, ques3, ques4];
 
-questions.forEach((elem) => {
-  if (elem.correctAnswer === 'c') console.log('Вопрос: ' + elem.question + 'Ответ: ' + elem.answer[2]);
-})
+// questions.forEach((elem) => {
+//   if (elem.correctAnswer === 'c') console.log('Вопрос: ' + elem.question + 'Ответ: ' + elem.answer[2]);
+// })
+
+function checkAnswer(){
+  questions.forEach((elem) => {
+      let ans = prompt(elem.question + '\na) ' + elem.answer[0] + '\nb) ' + elem.answer[1] + '\nc) ' + elem.answer[2] + '\nd) ' + elem.answer[3]);
+      if (ans == elem.correctAnswer) alert('Верно!');
+      else alert('Не верно.')
+  })
+}
+checkAnswer();

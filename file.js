@@ -22,11 +22,24 @@ let questions = [ques1, ques2, ques3, ques4];
 //   if (elem.correctAnswer === 'c') console.log('Вопрос: ' + elem.question + 'Ответ: ' + elem.answer[2]);
 // })
 
+// function checkAnswer(){
+//   questions.forEach((elem) => {
+//       let ans = prompt(elem.question + '\na) ' + elem.answer[0] + '\nb) ' + elem.answer[1] + '\nc) ' + elem.answer[2] + '\nd) ' + elem.answer[3]);
+//       if (ans == elem.correctAnswer) alert('Верно!');
+//       else alert('Не верно.')
+//   })
+// }
+
+let trueAns = 0;
 function checkAnswer(){
   questions.forEach((elem) => {
       let ans = prompt(elem.question + '\na) ' + elem.answer[0] + '\nb) ' + elem.answer[1] + '\nc) ' + elem.answer[2] + '\nd) ' + elem.answer[3]);
-      if (ans == elem.correctAnswer) alert('Верно!');
-      else alert('Не верно.')
+      if (ans == elem.correctAnswer) {
+        trueAns++;
+      }
   })
+  console.log(trueAns);
+  document.body.innerHTML=`Правильных ответов: ${trueAns}`;
 }
+
 checkAnswer();
